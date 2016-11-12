@@ -3,6 +3,85 @@
 Gerenciar Requisitos é um processo associado à qualidade do desenvolvimento de software. Ela está tem a característica de ser um processo de entender e controlar diversas mudanças que ocorrem nos requisitos, por diversos motivos, como por exemplo mudanças no ambiente do sistema ou nos objetivos de uma organização (SOMMERVILLE, 2003), ele tem como principal objetivo a aquisição de conhecimentos das regras de negócios e verificação do que o cliente necessita para então obter uma boa especificação dos requisitos de software (DE GRANDE, 2006). Para isso, neste tópico, foram estabelecidos alguns temas como a rastreabilidade dos requisitos e também os atributos dos requisitos que serão gerenciados.
 \\
 \section{Nível de Portifólio}
+A divisão das camadas do SAFe, nos proporcionam uma visão dos níveis de requisitos que devem ser tratados. A camada de Portfólio[1] envolve os requisitos a nível de negócio, tendo sempre uma visão com alto nível abstracional. De acordo com o processo desenvolvido neste projeto, o nível de portfólio possui as seguintes etapas:\\
+\tab - Compreender o contexto e os objetivos do cliente;\\
+\tab - Definir Épicos;\\
+\tab - Definir Enables para os Épicos;\\
+\tab - Priorizar Épicos;\\
+\tab - Validar Épicos;\\
+\\
+E os seguintes artefatos seriam gerados:\\
+\tab - Temas de Investimento\\
+\tab - Backlog de Épicos\\
+
+\begin{figure}[h]
+    \centering
+    \label{fig01}
+        \includegraphics[keepaspectratio=true,scale=0.5]{figuras/nivelPortfolioRequisitos.eps}
+    \caption{Figura Nível de Portfólio}
+\end{figure}
+
+\subsection{Backlog de Portfólio}
+
+Temas de Investimento: Os seguintes temas de investimento foram levantados:\\
+\\
+\tab T1 - Gestão Administrativa\\
+\\
+\tab Descrição: Neste tema, a Gestão Administrativa cuida de cada aspecto da administração, sendo eles tanto de pedidos quanto de usuários e de produtos e envolve o épico Gestão de Pedidos. Nela é tratada todos os pontos que não são relativos ao marketing, que tem seu próprio tema de investimento. \\
+\tab É dentro deste tema que serão definidas e aprimoradas cada atividade relacionada com a administração das informações relevantes para a efetivação da venda, relacionando os dados de usuários, produtos e pedidos automatizando toda a logística que anteriormente era realizada manualmente.\\
+
+\tab T2 - Gestão de Marketing\\
+\\
+\tab Descrição: O tema de Gestão de Marketing inclui cada aspecto do sistema relativo a divulgação dos produtos e meios de comunicação da empresa Chef Nery. \\
+
+Épicos: Para especificação dos Épicos, utilizou-se o padrão recomendados pelo SAFe, que é o template lightweight business case.\\
+
+\begin{table}[]
+\centering
+\caption{E1}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\cline{1-2}
+\textbf{Nome do Épico:} Gestão de Pedidos &  \textbf{Data de Entrada do Épico:} 20 de Outubro de 2016\\ \cline{1-2}
+\multicolumn{2}{|p{15cm}|}{ \textbf{Descrição do Épico:} A gestão dos pedidos consiste em um conjunto de funções relacionadas  a informações sobre produtos que caracterizam ao que, como, quando e onde será entregue o pedido.} \\ \cline{1-2}
+\multicolumn{2}{|p{15cm}|}{\textbf{Critérios de Sucesso:} O critério de sucesso desse Épico será definido com 75\% ou mais de cumprimento das features envolvidas.} \\ \cline{1-2}
+\textbf{Nome do Épico:} Gestão de Pedidos &  \textbf{Data de Entrada do Épico:} 20 de Outubro de 2016\\ \cline{1-2}
+\multicolumn{2}{|p{15cm}|}{ Patrocinadores: Sem patrocinadores.} \\ \cline{1-2}
+\multicolumn{2}{|p{15cm}|}{ Usuários e Mercados Afetados: Os usuários serão afetados de modo a poderem comprar diversas massas sem por exemplo sair de casa ou alguma dificuldade em se comunicar com o Chef Nery, haverá uma plataforma online para isso.} \\ \cline{1-2}
+\multicolumn{2}{|p{15cm}|}{ Produtos, Programas e Serviços Afetados: O serviço de produção e venda dos produtos da Fábrica de Massas poderão ser afetados à medida que um sistema de software desse modelo facilite a aquisição do produto. } \\ \cline{1-2}
+\textbf{Investimento Estimado:}90\% dos recursos do grupo &  \textbf{Data de Entrada do Épico:} 20 de Outubro de 2016\\ \cline{1-2}
+\textbf{Nome do Épico:} Gestão de Pedidos & Tipo de Retorno: Melhora no sistema de compra e venda do produto, controle de clientes e controle de vendas.\\ \cline{1-2}
+\textbf{Data de início:} 24/10/2016 & Data de encerramento: 30/11/2016\\ \cline{1-2}
+\end{tabular}
+\end{table}
+
+\begin{table}[]
+\centering
+\caption{E2}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\cline{1-2}
+\textbf{Nome do Épico:} Gestão da Exposição da Empresa.&  \textbf{Data de Entrada do Épico:} 20 de Outubro de 2016\\ \cline{1-2}
+\multicolumn{2}{|p{15cm}|}{ Descrição do Épico: A gestão da Exposição da Empresa consiste em um conjunto de atividades relacionadas com a comunicação entre a empresa e o seu cliente. Dentre estas atividades deve se destacar os planos de marketing.} \\ \cline{1-2}
+\multicolumn{2}{|p{15cm}|}{Critério de Sucesso:
+O critério de sucesso desse Épico será definido com 75\% ou mais de cumprimento das features envolvidas.} \\ \cline{1-2}
+No Escopo:
+ Está no escopo desse Épico Divulgar Canais de Comunicação &  Fora do Escopo: Está fora do escopo aspectos relacionados a Pedidos, Usuários e Produtos.\\ \cline{1-2}
+\multicolumn{2}{|p{15cm}|}{ Patrocinadores: Sem patrocinadores.} \\ \cline{1-2}
+\multicolumn{2}{|p{15cm}|}{Usuários e Mercados Afetados: Os usuários serão afetados por conseguirem se comunicar mais facilmente com a fábrica de massa ChefNery. Além disso, os clientes terão uma melhor visão dos produtos da empresa.} \\ \cline{1-2}
+\multicolumn{2}{|p{15cm}|}{Produtos, Programas e Serviços Afetados: O serviço de comunicação associada a boas técnicas de marketing pode possibilitar o crescimento no número de clientes.
+} \\ \cline{1-2}
+\textbf{Investimento Estimado:}10\% dos recursos do grupo &  \textbf{Data de Entrada do Épico:} 20 de Outubro de 2016\\ \cline{1-2}
+\textbf{Nome do Épico:} Gestão de Pedidos & Tipo de Retorno:Melhora na imagem, comunicação e marketing da  Empresa.\\ \cline{1-2}
+\textbf{Data de início:} 24/10/2016 & Data de encerramento: 30/11/2016\\ \cline{1-2}
+\end{tabular}
+\end{table}
+
+
+
+
+
+
 
 \section{Nível de Programa}
 O Nível de Programa é caracterizado por ser uma camada intermediária entre o Nível de Portfólio e o Nível de Time. Desta forma, neste nível os times de desenvolvimento e outros recursos são aplicados na tarefa de desenvolvimento do projeto.  Nesta etapa ocorre o refinamento dos Épicos que se transformam em Features e o planejamento do Program Increment (PI).\\
