@@ -178,37 +178,60 @@ O Backlog de time contêm as Histórias de usuário que serão desenvolvidas nas
 \tab A Ação trata do que o Ator deseja fazer para atingir o seu objetivo dentro do software em questão.\\
 \tab A Funcionalidade condiz com o resultado esperado pelo Ator ao realizar uma devida ação. É o resultado do que foi feito.\\
 \tab Os Pontos das Histórias de Usuário serão definidas no decorrer do desenvolvimento. As histórias de Usuário são:\\
-\\
+
+
 \tab F1H1 - Pagar no ato da entrega \\
 \\
 \tab Eu como cliente desejo efetuar a compra, pegando somente na hora da entrega, a fim de pagar por dinheiro ou por cartão.\\
 \tab Depende de: Efetuar Pedido Checando o Estoque, Cadastrar Usuário, Escolher Endereço de Entrega, Manter Produto, Calcular Valor do Produto.\\
-\\
+\tab Critérios de Aceitação:\\
+\tab - O usuário deve estar com o endereço devidamente cadastrado. \\
+
 \tab F1H2 - Pagar via sistema online\\
 \\
 \tab Eu como cliente desejo efetuar a compra e pagar por um sistema online(pagseguro), a fim de que o próprio sistema efetue o pagamento.\\
 Depende de: Efetuar Pedido Checando o Estoque, Cadastrar Usuário, Escolher Endereço de Entrega, Manter Produto, Calcular Valor do Produto.\\
-\\
+\tab Critérios de Aceitação:\\
+\tab - O usuário deve estar com o endereço devidamente cadastrado. \\
+\tab - O sistema de compra online, como por exemplo o  Paypal, deve confirmar a possibilidade da compra.\\
+\tab - Caso não haja possibilidade, aparecerá uma mensagem alertando a impossibilidade de realizar a compra.\\
+
+
 \tab F1H3 - Efetuar pedido checando o estoque\\
 \\
 \tab Eu como administrador do estoque desejo que o próprio sistema avalie a ausência de produtos, a fim de permitir apenas pedidos com a possibilidade de entrega.\\
 \tab Depende de: Ajustar o preço conforme opção de entrega, Cadastrar Usuário, Manter Produto, Calcular Valor do Produto.\\
-\\
+\tab Critérios de Aceitação:\\
+\tab - O sistema só deve realizar pedidos com uma quantidade de produtos dentro do limite máximo do estoque. \\
+\tab - Caso não haja produtos suficientes, deve aparecer uma mensagem informando que não é possível fazer a compra sem a quantidade certa de produtos no estoque.\\
+
+
 \tab F1H4 - Escolher endereço de entrega\\
 \\
 \tab Eu como cliente desejo poder escolher o endereço de entrega a fim de que a entrega pode ser em um endereço cujo queira receber os pedidos (ambiente comercial, em domicílio, etc).\\
 \tab Depende de: Cadastrar Usuário, Efetuar Pedido Checando o Estoque.\\
-\\
+\tab Critérios de Aceitação:\\
+\tab - O usuário deve estar com o endereço devidamente cadastrado. \\
+\tab - Caso não haja possibilidade de entrega no endereço cadastrado, deve aparecer uma mensagem informando que o endereço não está dentro da área de entregas da Fábrica de Massas.\\
+
+
 \tab F1H5 - Ser alertado quanto a pedido\\
 \\
 \tab Eu como cliente e como vendedor desejo ser alertado quando o pedido foi efetuado para que tenha clareza quanto o status de aceitação do pedido.\\
 \tab Depende de: Efetuar Pedido Checando Estoque.\\
-\\
+\tab Critérios de Aceitação:\\
+\tab - Caso seja possível a entrega, o cliente será notificado quanto ao pedido. \\
+\tab - Caso seja possível a entrega, o vendedor será notificado quanto ao pedido. \\
+\tab - Caso não seja possível a entrega, o cliente não conseguirá efetuar o pedido. \\
+
+
 \tab F1H6 - Ajustar o preço conforme opção de entrega\\
 \\
 \tab Eu como administrador desejo que os preços sejam calculados de acordo com o local de entrega a fim de que o próprio sistema seja responsável pela conta do pagamento.\\
 \tab Depende de: Escolher endereço de entrega.\\
-\\
+\tab Critérios de Aceitação:\\
+\tab - O sistema deve realizar o cálculo do preço de acordo com o tipo de entrega.\\
+
 \tab F2H7 - Cadastrar usuário\\
 \\
 \tab Como Comprador, quero poder realizar meu cadastro no sistema para poder efetuar pedidos pela plataforma web.\\
