@@ -1,7 +1,7 @@
 \chapter[Gerenciamento de Requisitos]{Gerenciamento de Requisitos}
 
 Gerenciar Requisitos é um processo associado à qualidade do desenvolvimento de software. Ela está tem a característica de ser um processo de entender e controlar diversas mudanças que ocorrem nos requisitos, por diversos motivos, como por exemplo mudanças no ambiente do sistema ou nos objetivos de uma organização (SOMMERVILLE, 2003), ele tem como principal objetivo a aquisição de conhecimentos das regras de negócios e verificação do que o cliente necessita para então obter uma boa especificação dos requisitos de software (DE GRANDE, 2006). Para isso, neste tópico, foram estabelecidos alguns temas como a rastreabilidade dos requisitos e também os atributos dos requisitos que serão gerenciados.
-\\
+
 \section{Nível de Portifólio}
 A divisão das camadas do SAFe, nos proporcionam uma visão dos níveis de requisitos que devem ser tratados. A camada de Portfólio[1] envolve os requisitos a nível de negócio, tendo sempre uma visão com alto nível abstracional. De acordo com o processo desenvolvido neste projeto, o nível de portfólio possui as seguintes etapas:\\
 \tab - Compreender o contexto e os objetivos do cliente;\\
@@ -25,18 +25,22 @@ E os seguintes artefatos seriam gerados:\\
 
 \subsection{Backlog de Portfólio}
 
-\subsubsection{Temas de Investimento:} Os seguintes temas de investimento foram levantados:
 
+\subsubsection{Temas de Investimento}
+
+Os seguintes temas de investimento foram levantados:\\
+\tab \\
 \textbf{T1 - Gestão Administrativa}
-
+\tab \\
 \textbf{Descrição:} Neste tema, a Gestão Administrativa cuida de cada aspecto da administração, sendo eles tanto de pedidos quanto de usuários e de produtos e envolve o épico Gestão de Pedidos. Nela é tratada todos os pontos que não são relativos ao marketing, que tem seu próprio tema de investimento. \\
 \tab É dentro deste tema que serão definidas e aprimoradas cada atividade relacionada com a administração das informações relevantes para a efetivação da venda, relacionando os dados de usuários, produtos e pedidos automatizando toda a logística que anteriormente era realizada manualmente.\\
 
+\tab \\
 \textbf{T2 - Gestão de Marketing}
-
+\tab \\
 \textbf{Descrição:} O tema de Gestão de Marketing inclui cada aspecto do sistema relativo a divulgação dos produtos e meios de comunicação da empresa Chef Nery. \\
 
-\subsubsection{\textbf{Épicos:}}
+\subsubsection{Épicos}
 Para especificação dos Épicos, utilizou-se o padrão recomendados pelo SAFe, que é o template lightweight business case.\\
 
 \tab \\ \\ \\
@@ -135,6 +139,7 @@ O Backlog de Features ficou composto pelas seguintes features:\\
 \subsection{Roadmap}
 O Roadmap tem como objetivo apresentar um conjunto de releases planejadas com suas respectivas datas, features e priorizações baseadas no tempo. É elaborados para estabelecer uma estratégia de entrega para atingir metas e mostra como se dará a evolução do trabalho como um todo. O Roadmap também pode ser definido como uma série de releases planejadas em datas, em que cada uma possui uma lista de features priorizadas (LEFFINGWELL, 2011).\\
 \tab No trabalho foi definido um conjunto de atividades relacionados a todo o processo assim como suas respectivas datas de entregas. A partir das prioridades definidas em conjunto com o cliente, as features foram dispostas como figura do Roadmap.\\
+\tab \\ \\ \\ \\ \\ \\ \\ \\ \\ \\
 \begin{figure}[h]
     \centering
     \label{fig01}
@@ -148,7 +153,7 @@ O Roadmap tem como objetivo apresentar um conjunto de releases planejadas com su
 \tab - Cadastrar Produto (Divulgação do produto incluindo descrição);\\
 \tab - Emitir Pedido mesmo que não seja utilizado sistemas de pagamento via internet.\\
 \\
-Essas características priorizadas serão definidas no tópico de Nível de Time em forma de Histórias de Usuário com mais clareza.\\
+\tab Essas características priorizadas serão definidas no tópico de Nível de Time em forma de Histórias de Usuário com mais clareza.\\
 
 \section{Nível de Time}
 Este nível se assemelha bastante ao SCRUM,  portanto existem algumas atividades, tais como: Sprint Planning, Sprint Review, Sprint Retrospective. Nesta etapa, as Features são fragmentadas em Histórias do Usuário. Esta etapa está relacionada com o desenvolvimento dos PI’s.\\
@@ -180,14 +185,14 @@ O Backlog de time contêm as Histórias de usuário que serão desenvolvidas nas
 \tab Os Pontos das Histórias de Usuário serão definidas no decorrer do desenvolvimento. As histórias de Usuário são:\\
 
 
-\tab F1H1 - Pagar no ato da entrega \\
+F1H1 - Pagar no ato da entrega \\
 \\
 \tab Eu como cliente desejo efetuar a compra, pegando somente na hora da entrega, a fim de pagar por dinheiro ou por cartão.\\
 \tab Depende de: Efetuar Pedido Checando o Estoque, Cadastrar Usuário, Escolher Endereço de Entrega, Manter Produto, Calcular Valor do Produto.\\
 \tab Critérios de Aceitação:\\
 \tab - O usuário deve estar com o endereço devidamente cadastrado. \\
 
-\tab F1H2 - Pagar via sistema online\\
+F1H2 - Pagar via sistema online\\
 \\
 \tab Eu como cliente desejo efetuar a compra e pagar por um sistema online(pagseguro), a fim de que o próprio sistema efetue o pagamento.\\
 Depende de: Efetuar Pedido Checando o Estoque, Cadastrar Usuário, Escolher Endereço de Entrega, Manter Produto, Calcular Valor do Produto.\\
@@ -197,7 +202,7 @@ Depende de: Efetuar Pedido Checando o Estoque, Cadastrar Usuário, Escolher Ende
 \tab - Caso não haja possibilidade, aparecerá uma mensagem alertando a impossibilidade de realizar a compra.\\
 
 
-\tab F1H3 - Efetuar pedido checando o estoque\\
+F1H3 - Efetuar pedido checando o estoque\\
 \\
 \tab Eu como administrador do estoque desejo que o próprio sistema avalie a ausência de produtos, a fim de permitir apenas pedidos com a possibilidade de entrega.\\
 \tab Depende de: Ajustar o preço conforme opção de entrega, Cadastrar Usuário, Manter Produto, Calcular Valor do Produto.\\
@@ -206,7 +211,7 @@ Depende de: Efetuar Pedido Checando o Estoque, Cadastrar Usuário, Escolher Ende
 \tab - Caso não haja produtos suficientes, deve aparecer uma mensagem informando que não é possível fazer a compra sem a quantidade certa de produtos no estoque.\\
 
 
-\tab F1H4 - Escolher endereço de entrega\\
+F1H4 - Escolher endereço de entrega\\
 \\
 \tab Eu como cliente desejo poder escolher o endereço de entrega a fim de que a entrega pode ser em um endereço cujo queira receber os pedidos (ambiente comercial, em domicílio, etc).\\
 \tab Depende de: Cadastrar Usuário, Efetuar Pedido Checando o Estoque.\\
@@ -215,7 +220,7 @@ Depende de: Efetuar Pedido Checando o Estoque, Cadastrar Usuário, Escolher Ende
 \tab - Caso não haja possibilidade de entrega no endereço cadastrado, deve aparecer uma mensagem informando que o endereço não está dentro da área de entregas da Fábrica de Massas.\\
 
 
-\tab F1H5 - Ser alertado quanto a pedido\\
+F1H5 - Ser alertado quanto a pedido\\
 \\
 \tab Eu como cliente e como vendedor desejo ser alertado quando o pedido foi efetuado para que tenha clareza quanto o status de aceitação do pedido.\\
 \tab Depende de: Efetuar Pedido Checando Estoque.\\
@@ -225,14 +230,14 @@ Depende de: Efetuar Pedido Checando o Estoque, Cadastrar Usuário, Escolher Ende
 \tab - Caso não seja possível a entrega, o cliente não conseguirá efetuar o pedido. \\
 
 
-\tab F1H6 - Ajustar o preço conforme opção de entrega\\
+F1H6 - Ajustar o preço conforme opção de entrega\\
 \\
 \tab Eu como administrador desejo que os preços sejam calculados de acordo com o local de entrega a fim de que o próprio sistema seja responsável pela conta do pagamento.\\
 \tab Depende de: Escolher endereço de entrega.\\
 \tab Critérios de Aceitação:\\
 \tab - O sistema deve realizar o cálculo do preço de acordo com o tipo de entrega.\\
 
-\tab F2H7 - Cadastrar usuário\\
+F2H7 - Cadastrar usuário\\
 \\
 \tab Como Comprador, quero poder realizar meu cadastro no sistema para poder efetuar pedidos pela plataforma web.\\
 \tab Compradores podem ser de diferentes tipos. Campos de cadastro devem exigir o mínimo que torne possível identificar o comprador (Quem, Onde, Contato).\\
@@ -241,8 +246,8 @@ Depende de: Efetuar Pedido Checando o Estoque, Cadastrar Usuário, Escolher Ende
 \tab Critérios de aceitação:\\
 \tab - Compradores podem ser de diferentes tipos.\\
 \tab - Campos de cadastro devem exigir no mínimo Nome, endereço e contato telefônico.\\
-
-\tab F2H8 - Gerenciar conta\\
+\\
+F2H8 - Gerenciar conta\\
 \\
 \tab Como Comprador, quero poder gerenciar minha conta para poder visualizar ou atualizar meus dados ou apagar minha conta.\\
 \tab Depende de: Cadastrar Usuário.\\
@@ -250,16 +255,16 @@ Depende de: Efetuar Pedido Checando o Estoque, Cadastrar Usuário, Escolher Ende
 \tab Critérios de aceitação:\\
 \tab - Comprador pode visualizar os dados que cadastrou.\\
 \tab - Comprador pode editar seu nome, endereço e contatos.\\
-
-\tab F2H9 Visualizar usuários\\
+\\
+F2H9 Visualizar usuários\\
 \\
 \tab Como Administrador do sistema, preciso visualizar todos os usuários cadastrados para poder facilmente.\\
 \tab Depende de: Cadastrar Usuário.\\
 \\
 \tab Critérios de aceitação:\\
 \tab - Administrador pode visualizar nome, endereço e contatos de compradores\\
-
-\tab F3H10 - Manter Produto\\
+\\
+F3H10 - Manter Produto\\
 \\
 \tab Como vendedor responsável pela Fábrica de Massas eu quero criar, atualizar, ler e deletar produtos para que seja possível ter um controle sobre quais e quantos produtos estão disponíveis no meu site.\\
 \tab Será necessário identificar cada produto com as seguintes informações:\\
@@ -268,8 +273,8 @@ Depende de: Efetuar Pedido Checando o Estoque, Cadastrar Usuário, Escolher Ende
 \tab Critérios de aceitação:\\
 \tab - O Administrador deverá identificar o produto com: Nome do Produto, Ingredientes, Categoria (Culinária Italianas, Culinária Oriental, Culinária Árabe), Quantidade Disponível.\\
 \tab - O Sistema deve oferecer as opções de cadastrar, atualizar, ler e excluir um produto.\\
-
-\tab F3H11 - Calcular Valor do Produto\\
+\\
+F3H11 - Calcular Valor do Produto\\
 \\
 \tab Como vendedor do produto desejo saber quanto custa cada produto baseado nos ingredientes e suas quantidades para que seja possível verificar o valor do produto. Esse custo será chamado de custo operacional.\\
 \tab Opcionalmente, gostaria de saber o valor do produto baseado também no custo da gasolina do transporte para a entrega e também o próprio custo de tempo gasto pelo Chef Nery na produção do mesmo.\\
@@ -277,8 +282,8 @@ Depende de: Efetuar Pedido Checando o Estoque, Cadastrar Usuário, Escolher Ende
 \\
 \tab Critérios de aceitação:\\
 \tab - O Sistema, com um produto cadastrado, deve calcular o valor do produto.\\
-
-\tab F3H12 - Gerar Relatório de Caixa\\
+\\
+F3H12 - Gerar Relatório de Caixa\\
 \\
 \tab Como administrador da Fábrica de Massas quero saber a partir de um gráfico informações de acordo com o tempo acerca do fluxo de caixa de minha empresa envolvendo produtos vendidos para que seja possível ter um melhor controle da minha empresa. Devem ser disponibilizadas opções de visualização diária, semanal e anual.\\
 \tab Opcionalmente com projeções futuras dos fluxos de caixa e a possibilidade de comparar fluxos de caixa.\\
@@ -288,8 +293,8 @@ Depende de: Efetuar Pedido Checando o Estoque, Cadastrar Usuário, Escolher Ende
 \tab - O Sistema deve gerar fluxos de caixa de forma diária.\\
 \tab - O Sistema deve informar ao administrador o fluxo de caixa diário.\\
 \tab - O Sistema deve comparar fluxos de caixa pontuais.\\
-
-\tab F4H13 - Apresentar informações sobre a empresa e contatos\\
+\\
+F4H13 - Apresentar informações sobre a empresa e contatos\\
 \\
 \tab Como vendedor responsável pela Fábrica de Massas eu quero disponibilizar informações para contato e atalhos para outros meios comunicação como facebook.\\
 \tab Será necessário apresentar um atalho para a página oficial da empresa no Facebook e apresentar informações de contato como email e telefone.\\
@@ -362,7 +367,7 @@ Todos são atribuídos à descrição do requisito.\\
 A rastreabilidade dos requisitos está diretamente ligada para referenciar um grupo coletivo de requisitos baseada em seus relacionamentos (GENVIGIR, 2009), ela estabelece formas de analisar o quanto mudanças afetaram o sistema.
 \tab Os elementos para estabelecer os relacionamentos entre os artefatos de software e os requisitos são chamados de elos, estes são elementos que são necessários para estabelecer a Rastreabilidade (GENVIGIR, 2009) e a partir deles pode ser levada em consideração um aspecto fundamental para esse contexto: a habilidade de descrever a “vida” de um determinado requisito. \\
 \tab O conceito de Rastreabilidade também pode ser definido como a capacidade de descrever e seguir o ciclo de vida de um requisito em diferentes direções (GOTEL, 1997). Com isso os mais diversos requisitos e seus elos com determinados artefatos pode-se criar uma teia de relacionamentos em que a rastreabilidade tem como característica acompanhar justamente esses relacionamentos.\\
-\tab Para este projeto foi escolhida a técnica vertical em que tem como característica relacionar artefatos dependendo de modelos. Para isso a rastreabilidade vertical será feita para Temas de Investimento, Épicos e Features e Casos de Uso.\\
+\tab Para este projeto foi escolhida a técnica vertical em que tem como característica relacionar artefatos dependendo de modelos, e a horizontal que relaciona elementos do mesmo nível. Para isso a rastreabilidade vertical será feita para Temas de Investimento, Épicos e Features e Histórias de Usuário, enquanto a horizontal será usada para as Histórias de Usuário.\\
 \tab A hierarquia do projeto em Relação aos Temas de Investimento, Épicos, Features e User Histories ficou da seguinte forma:\\
 
 \begin{figure}[h]
@@ -477,7 +482,7 @@ Obs.: No software não foi possível encontrar opções de adição de Temas de 
     \centering
     \label{fig01}
         \includegraphics[keepaspectratio=true,scale=1]{figuras/RallyDev/matriz.eps}
-    \caption{Matriz de rastreabilidade}
+    \caption{Matriz de Rastreabilidade Features/Épicos}
 \end{figure}
 
 \tab \\ \\ \\ \\ \\ 
@@ -486,10 +491,10 @@ Obs.: No software não foi possível encontrar opções de adição de Temas de 
     \centering
     \label{fig01}
         \includegraphics[keepaspectratio=true,scale=0.9]{figuras/RallyDev/matriz2.eps}
-    \caption{Matriz de rastreabilidade}
+    \caption{Matriz de Rastreabilidade User Stories/Features}
 \end{figure}
 
-\tab \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\
+\tab \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\
 
 
 
