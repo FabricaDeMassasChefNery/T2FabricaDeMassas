@@ -45,6 +45,7 @@ Para especificação dos Épicos, utilizou-se o padrão recomendados pelo SAFe, 
 
 \tab \\ \\ \\
 
+
 \begin{table}[]
 \centering
 \caption{E1 - Gestão de Pedidos}
@@ -58,13 +59,14 @@ Para especificação dos Épicos, utilizou-se o padrão recomendados pelo SAFe, 
 \multicolumn{2}{|p{15cm}|}{ \textbf{Patrocinadores:} Sem patrocinadores.} \\ \cline{1-2}
 \multicolumn{2}{|p{15cm}|}{ \textbf{Usuários e Mercados Afetados:} Os usuários serão afetados de modo a poderem comprar diversas massas sem por exemplo sair de casa ou alguma dificuldade em se comunicar com o Chef Nery, haverá uma plataforma online para isso.} \\ \cline{1-2}
 \multicolumn{2}{|p{15cm}|}{ \textbf{Produtos, Programas e Serviços Afetados:} O serviço de produção e venda dos produtos da Fábrica de Massas poderão ser afetados à medida que um sistema de software desse modelo facilite a aquisição do produto. } \\ \cline{1-2}
-\textbf{Investimento Estimado:}90\% dos recursos do grupo &  \textbf{Data de Entrada do Épico:} 20 de Outubro de 2016\\ \cline{1-2}
-\textbf{Nome do Épico:} Gestão de Pedidos & \textbf{Tipo de Retorno:} Melhora no sistema de compra e venda do produto, controle de clientes e controle de vendas.\\ \cline{1-2}
+\textbf{Investimento Estimado: }90\% dos recursos do grupo &  \textbf{Data de Entrada do Épico:} 20 de Outubro de 2016\\ \cline{1-2}
+\multicolumn{2}{|p{15cm}|}{\textbf{Tipo de Retorno:} Melhora no sistema de compra e venda do produto, controle de clientes e controle de vendas.} \\ \cline{1-2}
 \textbf{Data de início:} 24/10/2016 & \textbf{Data de encerramento:} 30/11/2016\\ \cline{1-2}
 \end{tabular}
 \end{table}
 
 \tab \\ \\ \\
+
 
 \begin{table}[]
 \centering
@@ -82,7 +84,7 @@ O critério de sucesso desse Épico será definido com 75\% ou mais de cumprimen
 \multicolumn{2}{|p{15cm}|}{\textbf{Produtos, Programas e Serviços Afetados:} O serviço de comunicação associada a boas técnicas de marketing pode possibilitar o crescimento no número de clientes.
 } \\ \cline{1-2}
 \textbf{Investimento Estimado:}10\% dos recursos do grupo &  \textbf{Data de Entrada do Épico:} 20 de Outubro de 2016\\ \cline{1-2}
-\textbf{Nome do Épico:} Gestão da Exposição da Empresa & \textbf{Tipo de Retorno:}Melhora na imagem, comunicação e marketing da  Empresa.\\ \cline{1-2}
+\multicolumn{2}{|p{15cm}|}{\textbf{Tipo de Retorno:} Melhora na imagem, comunicação e marketing da  Empresa.} \\ \cline{1-2}
 \textbf{Data de início:} 24/10/2016 & \textbf{Data de encerramento:} 30/11/2016\\ \cline{1-2}
 \end{tabular}
 \end{table}
@@ -242,16 +244,14 @@ F2H7 - Cadastrar usuário\\
 \tab Como Comprador, quero poder realizar meu cadastro no sistema para poder efetuar pedidos pela plataforma web.\\
 \tab Compradores podem ser de diferentes tipos. Campos de cadastro devem exigir o mínimo que torne possível identificar o comprador (Quem, Onde, Contato).\\
 \tab Depende de: sem dependência.\\
-\\
 \tab Critérios de aceitação:\\
 \tab - Compradores podem ser de diferentes tipos.\\
-\tab - Campos de cadastro devem exigir no mínimo Nome, endereço e contato telefônico.\\
+\tab - Campos de cadastro devem exigir no mínimo nome, endereço e contato telefônico.\\
 \\
 F2H8 - Gerenciar conta\\
 \\
 \tab Como Comprador, quero poder gerenciar minha conta para poder visualizar ou atualizar meus dados ou apagar minha conta.\\
 \tab Depende de: Cadastrar Usuário.\\
-\\
 \tab Critérios de aceitação:\\
 \tab - Comprador pode visualizar os dados que cadastrou.\\
 \tab - Comprador pode editar seu nome, endereço e contatos.\\
@@ -260,7 +260,6 @@ F2H9 Visualizar usuários\\
 \\
 \tab Como Administrador do sistema, preciso visualizar todos os usuários cadastrados para poder facilmente.\\
 \tab Depende de: Cadastrar Usuário.\\
-\\
 \tab Critérios de aceitação:\\
 \tab - Administrador pode visualizar nome, endereço e contatos de compradores\\
 \\
@@ -269,7 +268,6 @@ F3H10 - Manter Produto\\
 \tab Como vendedor responsável pela Fábrica de Massas eu quero criar, atualizar, ler e deletar produtos para que seja possível ter um controle sobre quais e quantos produtos estão disponíveis no meu site.\\
 \tab Será necessário identificar cada produto com as seguintes informações:\\
 \tab - Depende de: Sem dependências.\\
-\\
 \tab Critérios de aceitação:\\
 \tab - O Administrador deverá identificar o produto com: Nome do Produto, Ingredientes, Categoria (Culinária Italianas, Culinária Oriental, Culinária Árabe), Quantidade Disponível.\\
 \tab - O Sistema deve oferecer as opções de cadastrar, atualizar, ler e excluir um produto.\\
@@ -279,7 +277,6 @@ F3H11 - Calcular Valor do Produto\\
 \tab Como vendedor do produto desejo saber quanto custa cada produto baseado nos ingredientes e suas quantidades para que seja possível verificar o valor do produto. Esse custo será chamado de custo operacional.\\
 \tab Opcionalmente, gostaria de saber o valor do produto baseado também no custo da gasolina do transporte para a entrega e também o próprio custo de tempo gasto pelo Chef Nery na produção do mesmo.\\
 \tab Depende de: Manter Produto.\\
-\\
 \tab Critérios de aceitação:\\
 \tab - O Sistema, com um produto cadastrado, deve calcular o valor do produto.\\
 \\
@@ -288,7 +285,6 @@ F3H12 - Gerar Relatório de Caixa\\
 \tab Como administrador da Fábrica de Massas quero saber a partir de um gráfico informações de acordo com o tempo acerca do fluxo de caixa de minha empresa envolvendo produtos vendidos para que seja possível ter um melhor controle da minha empresa. Devem ser disponibilizadas opções de visualização diária, semanal e anual.\\
 \tab Opcionalmente com projeções futuras dos fluxos de caixa e a possibilidade de comparar fluxos de caixa.\\
 \tab Depende de: Manter Produto, Calcular Valor do Produto.\\
-\\
 \tab Critérios de aceitação:\\
 \tab - O Sistema deve gerar fluxos de caixa de forma diária.\\
 \tab - O Sistema deve informar ao administrador o fluxo de caixa diário.\\
@@ -299,7 +295,6 @@ F4H13 - Apresentar informações sobre a empresa e contatos\\
 \tab Como vendedor responsável pela Fábrica de Massas eu quero disponibilizar informações para contato e atalhos para outros meios comunicação como facebook.\\
 \tab Será necessário apresentar um atalho para a página oficial da empresa no Facebook e apresentar informações de contato como email e telefone.\\
 \tab Depende de: Sem Dependências.\\
-\\
 \tab Critérios de Aceitação:\\
 \tab - O sistema deve apresentar e disponibilizar todas as mídias sociais em que a fábrica de massa Chef Nery gerencia oficialmente para o cliente.. \\
 \tab - Quando o cliente seleciona uma das mídias sociais disponíveis o sistema deve abrir esta página em uma nova aba do navegador.\\
